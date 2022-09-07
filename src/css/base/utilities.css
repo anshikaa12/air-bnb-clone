@@ -21,3 +21,11 @@
   align-items: center;
   justify-content: center;
 }
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-track {
+  width: 2px;
+  background: #f1f1f1;
+}

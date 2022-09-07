@@ -1,11 +1,23 @@
 import React from "react";
 import { houses } from "../database/houses";
+import {FilteredList} from "../context/filterReducer";
+import { useFilterContext } from "../context/filterContext";
 function CardList() {
+const {filterState} = useFilterContext();
+let updatedList=filterState.location !== ""
+? FilteredList(
+    filterState.location,
+    filterState.beds,
+    filterState.price,
+    filterState.type,
+    houses
+  )
+: houses;
   return (
     <div className="main-sec">
-      {houses.map((house) => {
+      {updatedList.map((house) => {
         return (
-          <div className="basic-card">
+          <div className="basic-card" key={house.name}>
             <img src={house.img} className="card-img" alt="text" />
             <div className="card-body">
               <span className="card-price h4-text wt-bold">{house.price}$</span>
