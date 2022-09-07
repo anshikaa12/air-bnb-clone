@@ -1,0 +1,34 @@
+.h5-text {
+    font-size: 1.5rem;
+}
+
+.h6-text {
+    font-size: 1.5rem;
+}
+
+.wt-bold {
+    font-weight: 600;
+}
+
+.wt-md {
+    font-weight: 500;
+}
+
+.wt-sm {
+    font-weight: 300;
+}
+
+.main-h1-xl {
+    font-size: 6rem;
+
+}
+
+.text-align-center {
+    text-align: center;
+}
+.prime-color-text{
+    color: var(--primary-color);
+}
+.grey-color-text{
+    color: var(--grey-color);
+}

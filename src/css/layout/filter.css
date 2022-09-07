@@ -1,0 +1,41 @@
+.filter-box {
+  gap: 5px;
+  padding: 1rem 1rem;
+  border: 1px solid var(--grey-color);
+  width: 6rem;
+  border-radius: 7px;
+}
+.filter-bar {
+  height: 8rem;
+  padding: 3rem;
+  gap: 1rem;
+}
+
+/* //////////////////// */
+
+.filter-list {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.filter-type {
+  color: gray;
+}
+
+select {
+  width: 100%;
+  height: 100%;
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  margin-top: 5px;
+}
+.filter-item {
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  /* min-width: 25rem; */
+}

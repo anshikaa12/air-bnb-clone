@@ -1,0 +1,33 @@
+.main-sec {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+.main {
+  width: 100%;
+}
+
+.main-content {
+  padding: 1rem 6rem;
+}
+@media only screen and (max-width: 1024px) {
+  .main-sec {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .main-sec {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-content {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .main-sec {
+    grid-template-columns: 1fr;
+  }
+}
